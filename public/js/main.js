@@ -8,4 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     slider.addEventListener("mouseleave", function() {
         slider.style.animationPlayState = "running";
     });
+
+    
+
 });
