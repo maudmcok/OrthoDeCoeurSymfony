@@ -1,4 +1,4 @@
- /* Variables des couleurs */
+/* Variables des couleurs */
 :root {
     --primary-color: #2C5282;
     --secondary-color: #4299E1;
@@ -616,23 +616,31 @@ section {
 }
 
 /* Mise à jour des styles pour le slider avec logos */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+
+.slider {
+    display: flex;
+    width: 20px;
+    animation: scroll 25s linear infinite;
+    width: fit-content;
+}
+
 .slide {
     flex: 0 0 auto;
     padding: 1rem;
-    margin: 0 0.5rem;
     background: var(--white);
     border-radius: 10px;
-    white-space: nowrap;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.slide:hover {
-    transform: translateY(-5px);
+    min-width: 120px;
 }
 
 .slide img {
@@ -646,20 +654,14 @@ section {
     font-size: 0.9rem;
     font-weight: 500;
     text-align: center;
+    white-space: nowrap;
+}
+/* Pause au survol */
+.slider:hover {
+    animation-play-state: paused;
 }
 
-/* Ajustements responsive */
-@media (max-width: 968px) {
-    .slide {
-        padding: 0.8rem;
-    }
-
-    .slide img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .slide span {
-        font-size: 0.8rem;
-    }
+@keyframes scroll {
+    0% { transform: translateX(100); }
+    100% { transform: translateX(-100%); }
 }
