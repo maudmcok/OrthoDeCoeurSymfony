@@ -1,5 +1,7 @@
 # OrthoDeCoeur - Cabinet d'Orthophonie
 
+[English](README.md) | [Français](README.fr.md)
+
 ## À Propos
 OrthoDeCoeur est un système de gestion professionnel de cabinet d'orthophonie conçu pour optimiser les soins aux patients, la planification des rendez-vous et les tâches administratives.
 
