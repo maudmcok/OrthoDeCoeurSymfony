@@ -1,0 +1,26 @@
+
+<div class="assurances-slider">
+    <h4>Assurances prises en charge :</h4>
+    <div class="slider-container">
+        <div class="slider">
+            {% for slide in slides %}
+                <div class="slide">
+                    <img src="{{ asset(slide.image) }}" alt="{{ slide.name }}">
+                    <span>{{ slide.name }}</span>
+                </div>
+            {% endfor %}
+            {% for slide in slides %}
+                <div class="slide">
+                    <img src="{{ asset(slide.image) }}" alt="{{ slide.name }}">
+                    <span>{{ slide.name }}</span>
+                </div>
+            {% endfor %}
+            {% for slide in slides %}
+                <div class="slide">
+                    <img src="{{ asset(slide.image) }}" alt="{{ slide.name }}">
+                    <span>{{ slide.name }}</span>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

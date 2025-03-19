@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <header class="hero">
+        <div class="logo">
+            <img src="{{ asset('images/logo.webp') }}" alt="Logo OrthoDeCoeur">
+        </div>
+        <div class="hero-content">
+            <h1>
+                <span class="line-1">Bienvenue</span>
+                <span class="line-2">Chez</span>
+                <span class="line-3">OrthoDeCoeur</span>
+            </h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="introduction">
+            <h1>L'orthophoniste</h1>
+            <h2>est un professionnel de la santé essentiel et pourtant souvent méconnu, qui se consacre à
+                l'évaluation, au diagnostic et au traitement des troubles de la parole, du langage, de la communication,
+                de la déglutition et de l'audition.</h2>
+        </section>
+
+        {% include 'main/_description.html.twig' %}
+        {% include 'main/_statistics.html.twig' %}
+        {% include 'main/_approach.html.twig' %}
+        {% include 'main/_centers.html.twig' %}
+    </main>
+{% endblock %}
